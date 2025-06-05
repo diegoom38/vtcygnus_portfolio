@@ -8,15 +8,36 @@
   </head>
   <body class="bg-neutral-950 text-white">
     <!-- Navbar -->
-    <header class="flex justify-between items-center px-8 py-6 bg-neutral-900">
+    <header class="flex justify-between items-center px-6 py-4 bg-neutral-900">
       <h1 class="text-2xl font-bold">Portfólio - VtCygnus</h1>
-      <nav class="flex gap-6">
+      
+      <!-- Botão hamburger para mobile -->
+      <button id="menu-btn" class="block md:hidden focus:outline-none">
+        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <!-- Menu de navegação -->
+      <nav id="menu" class="hidden md:flex gap-8">
         <a href="#projetos" class="hover:text-purple-400">Projetos</a>
         <a href="#sobre" class="hover:text-purple-400">Sobre</a>
         <a href="#contato" class="hover:text-purple-400">Contato</a>
       </nav>
     </header>
 
+    <!-- Menu mobile (hidden por padrão) -->
+    <div id="mobile-menu" class="hidden md:hidden bg-neutral-800">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
+        <a href="#projetos" class="hover:text-purple-400 block px-3 py-2">Projetos</a>
+        <a href="#sobre" class="hover:text-purple-400 block px-3 py-2">Sobre</a>
+        <a href="#contato" class="hover:text-purple-400 block px-3 py-2">Contato</a>
+      </div>
+    </div>
+
+    <!-- Restante do seu conteúdo... -->
     <!-- Projetos -->
     <section id="projetos" class="px-8 py-16">
       <h3 class="text-4xl font-bold mb-10 text-center">Projetos</h3>
@@ -108,6 +129,8 @@
     <footer class="text-center py-6 bg-neutral-900 text-neutral-500">
       © 2025 | Desenvolvido por VtCygnus
     </footer>
-  </body>
+
+
   <script src="portfolio.js"></script>
+  </body>
 </html>
