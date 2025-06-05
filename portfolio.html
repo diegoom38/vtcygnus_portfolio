@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio | VtCygnus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-neutral-950 text-white">
+    <!-- Navbar -->
+    <header class="flex justify-between items-center px-8 py-6 bg-neutral-900">
+      <h1 class="text-2xl font-bold">Portfólio - VtCygnus</h1>
+      <nav class="flex gap-6">
+        <a href="#projetos" class="hover:text-purple-400">Projetos</a>
+        <a href="#sobre" class="hover:text-purple-400">Sobre</a>
+        <a href="#contato" class="hover:text-purple-400">Contato</a>
+      </nav>
+    </header>
+
+    <!-- Projetos -->
+    <section id="projetos" class="px-8 py-16">
+      <h3 class="text-4xl font-bold mb-10 text-center">Projetos</h3>
+
+      <div class="grid md:grid-cols-2 gap-10">
+        <!-- Harpia -->
+        <div class="bg-neutral-900 rounded-2xl overflow-hidden shadow-lg relative">
+          <button class="absolute top-1 right-1 z-10 bg-neutral-900 rounded-2xl py-2 px-3 text-white" onclick="downloadProject('harpia.pdf')">Baixar</button>
+          <img
+            src="harpia.png"
+            alt="Projeto Harpia"
+            class="w-full h-56 object-cover cursor-pointer hover:scale-110 transition-transform duration-300"
+          />
+          <div class="p-6">
+            <h4 class="text-2xl font-bold mb-2">Savior - Harpia</h4>
+            <p class="text-neutral-400 mb-4">
+              Uma identidade que transmite força, elegância e presença.
+              Inspirada na imponência da maior ave de rapina das Américas.
+            </p>
+            <span class="bg-neutral-800 px-3 py-1 rounded-full text-sm"
+              >Força • Precisão • inteligência • Estratégia</span
+            >
+          </div>
+        </div>
+
+        <!-- Gato Preto -->
+        <div class="bg-neutral-900 rounded-2xl overflow-hidden shadow-lg relative" >
+          <button class="absolute top-1 right-1 z-10 bg-neutral-900 rounded-2xl py-2 px-3 text-white" onclick="downloadProject('gato-preto.pdf')">Baixar</button>
+          <img
+            src="gato-preto.png"
+            alt="Projeto Gato Preto"
+            class="w-full h-56 object-cover cursor-pointer hover:scale-110 transition-transform duration-300"
+          />
+          <div class="p-6">
+            <h4 class="text-2xl font-bold mb-2">Savior - Gato Preto</h4>
+            <p class="text-neutral-400 mb-4">
+              Uma marca misteriosa, criativa e cheia de personalidade. Mistura
+              de charme, magia e autenticidade.
+            </p>
+            <span class="bg-neutral-800 px-3 py-1 rounded-full text-sm"
+              >Inteligência • Agilidade • Instinto estratégico •
+              Resiliência</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="px-8 py-16 bg-neutral-900">
+      <h3 class="text-4xl font-bold mb-6 text-center">Sobre Mim</h3>
+      <p class="max-w-2xl mx-auto text-center text-neutral-400">
+        Sou uma designer especializada. Acredito que uma marca é construída
+        muito além de um logo — ela é um sistema visual, uma linguagem que
+        comunica essência, valores e propósito. Meu trabalho une estética,
+        estratégia e significado para criar marcas vivas, que se conectam com
+        pessoas e geram valor.
+      </p>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="px-8 py-16">
+      <h3 class="text-4xl font-bold mb-6 text-center">Contato</h3>
+      <div class="flex flex-col items-center gap-4">
+        <p class="text-neutral-400">Me envie uma mensagem:</p>
+        <div class="flex gap-6">
+          <a
+            href="https://www.instagram.com/vivian__vt"
+            target="_blank"
+            class="hover:text-purple-400"
+            >Instagram</a
+          >
+          <a
+            href="mailto:vivian.thaina216@gmail.com"
+            class="hover:text-purple-400"
+            >Email</a
+          >
+          <a
+            href="https://www.behance.net/seuuser"
+            target="_blank"
+            class="hover:text-purple-400"
+            >Behance</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 bg-neutral-900 text-neutral-500">
+      © 2025 | Desenvolvido por VtCygnus
+    </footer>
+  </body>
+  <script src="portfolio.js"></script>
+</html>
