@@ -10,13 +10,23 @@
     <!-- Navbar -->
     <header class="flex justify-between items-center px-6 py-4 bg-neutral-900">
       <h1 class="text-2xl font-bold">Portfólio - VtCygnus</h1>
-      
+
       <!-- Botão hamburger para mobile -->
       <button id="menu-btn" class="block md:hidden focus:outline-none">
-        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2"
-          viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round"
-            d="M4 6h16M4 12h16M4 18h16"></path>
+        <svg
+          class="w-8 h-8 text-white"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"
+          ></path>
         </svg>
       </button>
 
@@ -31,9 +41,13 @@
     <!-- Menu mobile (hidden por padrão) -->
     <div id="mobile-menu" class="hidden md:hidden bg-neutral-800">
       <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
-        <a href="#projetos" class="hover:text-purple-400 block px-3 py-2">Projetos</a>
+        <a href="#projetos" class="hover:text-purple-400 block px-3 py-2"
+          >Projetos</a
+        >
         <a href="#sobre" class="hover:text-purple-400 block px-3 py-2">Sobre</a>
-        <a href="#contato" class="hover:text-purple-400 block px-3 py-2">Contato</a>
+        <a href="#contato" class="hover:text-purple-400 block px-3 py-2"
+          >Contato</a
+        >
       </div>
     </div>
 
@@ -42,12 +56,20 @@
     <section id="projetos" class="px-8 py-16">
       <h3 class="text-4xl font-bold mb-10 text-center">Projetos</h3>
 
-      <div class="grid md:grid-cols-2 gap-10">
+      <h2 class="text-2xl font-bold mb-10">Illustrator</h2>
+      <div class="grid md:grid-cols-3 gap-10">
         <!-- Harpia -->
-        <div class="bg-neutral-900 rounded-2xl overflow-hidden shadow-lg relative">
-          <button class="absolute top-1 right-1 z-10 bg-neutral-900 rounded-2xl py-2 px-3 text-white" onclick="downloadProject('harpia.pdf')">Baixar</button>
+        <div
+          class="bg-neutral-900 rounded-2xl overflow-hidden shadow-lg relative"
+        >
+          <button
+            class="absolute top-1 right-1 z-10 bg-neutral-900 rounded-2xl py-2 px-3 text-white"
+            onclick="downloadProject('assets/harpia/harpia.pdf', 'harpia')"
+          >
+            Baixar
+          </button>
           <img
-            src="harpia.png"
+            src="assets/harpia/harpia.png"
             alt="Projeto Harpia"
             class="w-full h-56 object-cover cursor-pointer hover:scale-110 transition-transform duration-300"
           />
@@ -64,10 +86,17 @@
         </div>
 
         <!-- Gato Preto -->
-        <div class="bg-neutral-900 rounded-2xl overflow-hidden shadow-lg relative" >
-          <button class="absolute top-1 right-1 z-10 bg-neutral-900 rounded-2xl py-2 px-3 text-white" onclick="downloadProject('gato-preto.pdf')">Baixar</button>
+        <div
+          class="bg-neutral-900 rounded-2xl overflow-hidden shadow-lg relative"
+        >
+          <button
+            class="absolute top-1 right-1 z-10 bg-neutral-900 rounded-2xl py-2 px-3 text-white"
+            onclick="downloadProject('assets/gato-preto/gato-preto.pdf', 'gatopreto')"
+          >
+            Baixar
+          </button>
           <img
-            src="gato-preto.png"
+            src="assets/gato-preto/gato-preto.png"
             alt="Projeto Gato Preto"
             class="w-full h-56 object-cover cursor-pointer hover:scale-110 transition-transform duration-300"
           />
@@ -83,6 +112,113 @@
             >
           </div>
         </div>
+
+        <!-- Doce utopia -->
+        <div
+          class="bg-neutral-900 rounded-2xl overflow-hidden shadow-lg relative"
+        >
+          <button
+            class="absolute top-1 right-1 z-10 bg-neutral-900 rounded-2xl py-2 px-3 text-white"
+            onclick="downloadProject('assets/doce-utopia/doce-utopia.jpg', 'doce-utopia')"
+          >
+            Baixar
+          </button>
+          <img
+            src="assets/doce-utopia/doce-utopia.jpg"
+            alt="Projeto Doce utopia"
+            class="w-full h-56 object-cover cursor-pointer hover:scale-110 transition-transform duration-300"
+          />
+          <div class="p-6">
+            <h4 class="text-2xl font-bold mb-2">Capa de álbum - Doce utopia</h4>
+            <p class="text-neutral-400 mb-4">
+              Capa vibrante estilo synthwave, com formas geométricas e
+              tipografia retrô futurista.
+            </p>
+            <span class="bg-neutral-800 px-3 py-1 rounded-full text-sm"
+              >Capa de album • Retro futurista • Vetorial</span
+            >
+          </div>
+        </div>
+
+        <!-- Gato banana emo -->
+        <div
+          class="bg-neutral-900 rounded-2xl overflow-hidden shadow-lg relative"
+        >
+          <button
+            class="absolute top-1 right-1 z-10 bg-neutral-900 rounded-2xl py-2 px-3 text-white"
+            onclick="downloadProject('assets/gato-banana-emo/gato-banana-emo.pdf', 'gato-banana-emo')"
+          >
+            Baixar
+          </button>
+          <img
+            src="assets/gato-banana-emo/gato-banana-emo.png"
+            alt="Projeto Gato banana emo"
+            class="w-full h-56 object-cover cursor-pointer hover:scale-110 transition-transform duration-300"
+          />
+          <div class="p-6">
+            <h4 class="text-2xl font-bold mb-2">Estampa de camiseta</h4>
+            <p class="text-neutral-400 mb-4">
+              Personagem fofo estilo chibi fantasiado de banana emo, em cenário
+              psicodélico dentro de pote.
+            </p>
+            <span class="bg-neutral-800 px-3 py-1 rounded-full text-sm"
+              >Ilustração Vetorial • Arte pop • Experimental • Estampas</span
+            >
+          </div>
+        </div>
+
+        <!-- Vetorial peixes -->
+        <div
+          class="bg-neutral-900 rounded-2xl overflow-hidden shadow-lg relative"
+        >
+          <button
+            class="absolute top-1 right-1 z-10 bg-neutral-900 rounded-2xl py-2 px-3 text-white"
+            onclick="downloadProject('assets/peixes/peixes.pdf', 'peixes')"
+          >
+            Baixar
+          </button>
+          <img
+            src="assets/peixes/peixes.png"
+            alt="Projeto peixes"
+            class="w-full h-56 object-cover cursor-pointer hover:scale-110 transition-transform duration-300"
+          />
+          <div class="p-6">
+            <h4 class="text-2xl font-bold mb-2">Design vetorial</h4>
+            <p class="text-neutral-400 mb-4">
+              Cenas marinhas vibrantes com lulas neon, peixes e tentáculos
+              misteriosos.
+            </p>
+            <span class="bg-neutral-800 px-3 py-1 rounded-full text-sm"
+              >Ilustração Vetorial • Arte Psicodélica • Design Marinho</span
+            >
+          </div>
+        </div>
+
+        <!-- Vetorial espaço -->
+        <div
+          class="bg-neutral-900 rounded-2xl overflow-hidden shadow-lg relative"
+        >
+          <button
+            class="absolute top-1 right-1 z-10 bg-neutral-900 rounded-2xl py-2 px-3 text-white"
+            onclick="downloadProject('assets/espaco/espaco.pdf', 'espaco')"
+          >
+            Baixar
+          </button>
+          <img
+            src="assets/espaco/espaco.png"
+            alt="Projeto espaço"
+            class="w-full h-56 object-cover cursor-pointer hover:scale-110 transition-transform duration-300"
+          />
+          <div class="p-6">
+            <h4 class="text-2xl font-bold mb-2">Design vetorial</h4>
+            <p class="text-neutral-400 mb-4">
+              Naves alienígenas exploram o espaço em cena lúdica e colorida.
+            </p>
+            <span class="bg-neutral-800 px-3 py-1 rounded-full text-sm"
+              >Ilustração Espacial • Arte Vetorial • Ficção Científica Infantil</span
+            >
+          </div>
+        </div>
       </div>
     </section>
 
@@ -90,11 +226,11 @@
     <section id="sobre" class="px-8 py-16 bg-neutral-900">
       <h3 class="text-4xl font-bold mb-6 text-center">Sobre Mim</h3>
       <p class="max-w-2xl mx-auto text-center text-neutral-400">
-        Sou uma designer especializada. Acredito que uma marca é construída
-        muito além de um logo — ela é um sistema visual, uma linguagem que
-        comunica essência, valores e propósito. Meu trabalho une estética,
-        estratégia e significado para criar marcas vivas, que se conectam com
-        pessoas e geram valor.
+        Sou uma designer principiante. Acredito que uma marca é construída muito
+        além de um logo — ela é um sistema visual, uma linguagem que comunica
+        essência, valores e propósito. Meu trabalho une estética, estratégia e
+        significado para criar marcas vivas, que se conectam com pessoas e geram
+        valor.
       </p>
     </section>
 
@@ -130,7 +266,6 @@
       © 2025 | Desenvolvido por VtCygnus
     </footer>
 
-
-  <script src="portfolio.js"></script>
+    <script src="portfolio.js"></script>
   </body>
 </html>

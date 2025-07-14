@@ -1,6 +1,6 @@
-function downloadProject(name) {
+function downloadProject(path, name) {
   const link = document.createElement("a");
-  link.href = name; // caminho do arquivo (ex: 'gato-preto.pdf')
+  link.href = path; // caminho do arquivo (ex: 'gato-preto.pdf')
   link.download = name; // força o download
   link.style.display = "none";
 
